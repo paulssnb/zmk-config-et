@@ -4,15 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
  
 / {
@@ -75,8 +71,8 @@
                         bindings = <
    &to 2    &td_q_ae     &kp W       &kp E        &kp R        &kp T   &kp Y &td_u_h       &td_i_mz         &kp O         &kp P         &to 0
    &tog 8  &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G   &kp H &hmr RSHFT J  &hmr RCTRL K     &hmr RALT L   &hmr RGUI SQT &tog 4
-   &to 3    &lt 6 Z     &kp X       &kp C        &kp V        &kp B   &kp N &kp M         &kp COMMA        &kp DOT       &lt 6 FSLH    &to 1
-                                     &lt 7 ESC &lt 4 SPC &lt 5 TAB   &lt 9 RET &lt 8 BSPC &lt 10 DEL
+   &to 3    &lt 5 Z     &kp X       &kp C        &kp V        &kp B   &kp N &kp M         &kp COMMA        &kp DOT       &lt 5 FSLH    &to 1
+                                        &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
                         >;
                 };
  
@@ -140,22 +136,7 @@
                         >;
                 };
  
-                mouse_layer { // Layer 5
-                    display-name = "MOUSE";
-// -----------------------------------------------------------------------------------------
-// | (CDH)  |      |      |       |       |    |   | K_REDO    | K_PASTE   | K_COPY  | K_CUT      | K_UNDO | (BASE) |
-// | (NUM)  | LGUI | LALT | LCTRL | LSHFT |    |   | MOVE_LEFT | MOVE_DOWN | MOVE_UP | MOVE_RIGHT |        | (NAV)  |
-// | (CTAP) |      |      |       |       |    |   | SCRL_LEFT | SCRL_DOWN | SCRL_UP | SCRL_RIGHT |        | (BTAP) |
-//                              |    |    |    |   | MB1 | MB2 | MB3 |
-                        bindings = <
-   &to 2  &none    &none    &none     &none     &none   &kp K_REDO     &kp K_PASTE    &kp K_COPY   &kp K_CUT       &kp K_UNDO &to 0
-   &tog 8 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none      &tog 4
-   &to 3  &none    &none    &none     &none     &none   &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none      &to 1
-                 &none &none &none   &mkp MB1 &mkp MB2 &mkp MB3
-                        >;
-                };
- 
-                button_layer { // Layer 6
+                button_layer { // Layer 5
                     display-name = "BUTTON";
 // -----------------------------------------------------------------------------------------
 // | (CDH)  |    |       |        |         |      |   |      |         |        |       |    | (BASE) |
@@ -170,7 +151,7 @@
                         >;
                 };
  
-                media_layer { // Layer 7
+                media_layer { // Layer 6
                     display-name = "MEDIA";
 // -----------------------------------------------------------------------------------------
 // | (CDH)  |      |      |       |       |    |   | RGB_TOG | RGB_EFF  | RGB_HUI  | RGB_SAI  | RGB_BRI | (BASE) |
@@ -185,7 +166,7 @@
                         >;
                 };
  
-                num_layer { // Layer 8
+                num_layer { // Layer 7
                     display-name = "NUM";
 // -----------------------------------------------------------------------------------------
 // | (CDH)  | LBKT  | N7 | N8 | N9 | RBKT  |   |    |       |       |      |      | (BASE) |
@@ -200,7 +181,7 @@
                         >;
                 };
  
-                sym_layer { // Layer 9
+                sym_layer { // Layer 8
                     display-name = "SYM";
 // -----------------------------------------------------------------------------------------
 // | (CDH)  | LBRC  | AMPS | ASTRK | LPAR  | RBRC |   |    |       |       |      |      | (BASE) |
@@ -215,7 +196,7 @@
                         >;
                 };
  
-                fun_layer { // Layer 10
+                fun_layer { // Layer 9
                     display-name = "FUN";
 // -----------------------------------------------------------------------------------------
 // | (CDH)  | F12 | F7 | F8 | F9 | PSCRN       |   |    |       |       |      |      | (BASE) |
