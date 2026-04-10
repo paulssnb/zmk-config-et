@@ -14,26 +14,26 @@
  
 / {
     behaviors {
-    // Й / Э
+    // Й / Ж
         td_q_ae: td_q_ae {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp Q>, <&kp SQT>;
+        bindings = <&kp Q>, <&kp SEMI>;
     };
     // Г / Х
         td_u_h: td_u_h {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp U>, <&kp LBRC>;
+        bindings = <&kp U>, <&kp LBKT>;
         };
     // Ш / Ъ
         td_i_mz: td_i_mz {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp I>, <&kp RBRC>;
+        bindings = <&kp I>, <&kp RBKT>;
         };
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
