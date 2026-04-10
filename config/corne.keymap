@@ -70,7 +70,7 @@
 //                      | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | RET (SYM) | BSPC (NUM) | DEL (FUN) |
                         bindings = <
    &to 2    &td_q_ae     &kp W       &kp E        &kp R        &kp T   &kp Y &td_u_h       &td_i_mz         &kp O         &kp P         &to 0
-   &tog 8  &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G   &kp H &hmr RSHFT J  &hmr RCTRL K     &hmr RALT L   &hmr RGUI SQT &tog 4
+   &tog 7  &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G   &kp H &hmr RSHFT J  &hmr RCTRL K     &hmr RALT L   &hmr RGUI SQT &tog 4
    &to 3    &lt 5 Z     &kp X       &kp C        &kp V        &kp B   &kp N &kp M         &kp COMMA        &kp DOT       &lt 5 FSLH    &to 1
                                         &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
                         >;
@@ -85,9 +85,9 @@
 //  | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | RET (SYM) | BSPC (NUM) | DEL (FUN) |
                         bindings = <
    &to 2   &td_q_ae &kp W &kp E &kp R &kp T   &kp Y &td_u_h &td_i_mz  &kp O   &kp P    &to 0
-   &tog 8  &kp A    &kp S &kp D &kp F &kp G   &kp H &kp J   &kp K     &kp L   &kp SQT  &tog 4
+   &tog 7  &kp A    &kp S &kp D &kp F &kp G   &kp H &kp J   &kp K     &kp L   &kp SQT  &tog 4
    &to 3   &kp Z    &kp X &kp C &kp V &kp B   &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &to 1
-              &lt 7 ESC &lt 4 SPC &lt 5 TAB   &lt 9 RET &lt 8 BSPC &lt 10 DEL
+                 &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
                         >;
                 };
  
@@ -100,9 +100,9 @@
 //                      | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | RET (SYM) | BSPC (NUM) | DEL (FUN) |
                         bindings = <
    &to 2  &kp Q       &kp W       &kp F        &kp P        &kp B   &kp J &kp L        &kp U        &kp Y       &kp SQT     &to 0
-   &tog 8 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T &kp G   &kp M &hmr RSHFT N &hmr RCTRL E &hmr RALT I &hmr RGUI O &tog 4
+   &tog 7 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T &kp G   &kp M &hmr RSHFT N &hmr RCTRL E &hmr RALT I &hmr RGUI O &tog 4
    &to 3  &kp Z       &kp X       &kp C        &kp D        &kp V   &kp K &kp H        &kp COMMA    &kp DOT     &kp FSLH    &to 1
-                                    &lt 7 ESC &lt 4 SPC &lt 5 TAB   &lt 9 RET &lt 8 BSPC &lt 10 DEL
+                                      &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
                         >;
                 };
  
@@ -115,9 +115,9 @@
 //  | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | ENT (SYM) | BSPC (NUM) | DEL (FUN) |
                         bindings = <
    &to 2  &kp Q    &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &to 0
-   &tog 8 &kp A    &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &tog 4
+   &tog 7 &kp A    &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &tog 4
    &to 3  &kp Z    &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &to 1
-            &lt 7 ESC &lt 4 SPC &lt 5 TAB   &lt 9 RET &lt 8 BSPC &lt 10 DEL
+               &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
                         >;
                 };
  
@@ -130,7 +130,7 @@
 //                              |    |    |    |   | ENT | BSPC | DEL |
                         bindings = <
    &to 2  &none    &none    &none     &none     &none    &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO &to 0
-   &tog 8 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none    &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT &kp CLCK   &tog 4
+   &tog 7 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none    &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT &kp CLCK   &tog 4
    &to 3  &none    &none    &none     &none     &none    &kp HOME   &kp PG_DN   &kp PG_UP  &kp END   &kp INS    &to 1
                                     &none &none &none    &kp RET &kp BSPC &kp DEL
                         >;
@@ -142,12 +142,12 @@
 // | (CDH)  |    |       |        |         |      |   |      |         |        |       |    | (BASE) |
 // | (NUM)  |    |       | K_UNDO | K_REDO  |      |   |      | K_REDO  | K_UNDO |       |    | (NAV)  |
 // | (CTAP) |    | K_CUT | K_COPY | K_PASTE | BOOT |   | BOOT | K_PASTE | K_COPY | K_CUT |    | (BTAP) |
-//                               | MB3 | MB2 | MB1 |   | MB1 | MB2 | MB3 |
+//                                  |    |    |    |   |    |    |    |
                         bindings = <
    &to 2  &none &none     &none      &none       &none         &none       &none       &none      &none     &none &to 0
-   &tog 8 &none &none     &kp K_UNDO &kp K_REDO  &none         &none       &kp K_REDO  &kp K_UNDO &none     &none &tog 4
+   &tog 7 &none &none     &kp K_UNDO &kp K_REDO  &none         &none       &kp K_REDO  &kp K_UNDO &none     &none &tog 4
    &to 3  &none &kp K_CUT &kp K_COPY &kp K_PASTE &bootloader   &bootloader &kp K_PASTE &kp K_COPY &kp K_CUT &none &to 1
-                               &mkp MB3 &mkp MB2 &mkp MB1   &mkp MB1 &mkp MB2 &mkp MB3
+                                     &none &none &none   &none &none &none
                         >;
                 };
  
@@ -160,7 +160,7 @@
 //                              |    |    |    |   | C_STOP | C_PP | C_MUTE |
                         bindings = <
    &to 2  &none    &none    &none     &none     &none   &rgb_ug RGB_TOG   &rgb_ug RGB_EFF  &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &to 0
-   &tog 8 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none   &ext_power EP_TOG &kp K_PREV       &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &tog 4
+   &tog 7 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none   &ext_power EP_TOG &kp K_PREV       &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &tog 4
    &to 3  &none    &none    &none     &none     &none   &out OUT_TOG      &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_CLR      &rgb_ug RGB_BRD &to 1
                                     &none &none &none   &kp C_STOP &kp C_PP &kp C_MUTE
                         >;
@@ -175,7 +175,7 @@
 //                      | DOT | N0 | MINUS |   |    |    |    |
                         bindings = <
    &to 2  &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT   &none &none     &none     &none    &none    &to 0
-   &tog 8 &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL  &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
+   &tog 7 &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL  &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
    &to 3  &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH   &none &none     &none     &none    &none    &to 1
                   &kp DOT &kp N0 &kp MINUS   &none &none &none
                         >;
@@ -190,7 +190,7 @@
 //                      | LPAR | RPAR | UNDER |   |   |    |    |
                         bindings = <
    &to 2  &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC   &none &none     &none     &none    &none    &to 0
-   &tog 8 &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS   &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
+   &tog 7 &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS   &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
    &to 3  &kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE   &none &none     &none     &none    &none    &to 1
                               &kp LPAR &kp RPAR &kp UNDER   &none &none &none
                         >;
@@ -205,7 +205,7 @@
 //                       | K_APP | SPACE | TAB |   |    |    |    |
                         bindings = <
    &to 2  &kp F12 &kp F7 &kp F8 &kp F9 &kp PSCRN         &none &none     &none     &none    &none    &to 0
-   &tog 8 &kp F11 &kp F4 &kp F5 &kp F6 &kp SLCK          &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
+   &tog 7 &kp F11 &kp F4 &kp F5 &kp F6 &kp SLCK          &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
    &to 3  &kp F10 &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK   &none &none     &none     &none    &none    &to 1
                            &kp K_APP &kp SPACE &kp TAB   &none &none &none
                         >;
