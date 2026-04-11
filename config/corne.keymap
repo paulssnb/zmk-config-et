@@ -67,12 +67,12 @@
 // | (CDH)  | Q          | W        | E         | R         | T |   | Y | U          | I         | O        | P             | (BASE) |
 // | (NUM)  | A (LGUI)   | S (LALT) | D (LCTRL) | F (LSHFT) | G |   | H | J (RSHFT) | K (RCTRL) | L (RALT) | SQT (RGUI)    | (NAV)  |
 // | (CTAP) | Z (BUTTON) | X        | C         | V         | B |   | N | M          | COMMA     | DOT      | FSLH (BUTTON) | (BTAP) |
-//                      | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | RET (SYM) | BSPC (NUM) | DEL (FUN) |
+//                        | ESC (MEDIA) | SPC (NAV) | TAB (FUN) |   | RET (SYM) | BSPC (NUM) | DEL |
                         bindings = <
    &to 2    &td_q_ae     &kp W       &kp E        &kp R        &kp T   &kp Y &td_u_h       &td_i_mz         &kp O         &kp P         &to 0
    &tog 7  &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G   &kp H &hmr RSHFT J  &hmr RCTRL K     &hmr RALT L   &hmr RGUI SQT &tog 4
    &to 3    &lt 5 Z     &kp X       &kp C        &kp V        &kp B   &kp N &kp M         &kp COMMA        &kp DOT       &lt 5 FSLH    &to 1
-                                        &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
+                                        &lt 6 ESC &lt 4 SPC &lt 9 TAB   &lt 8 RET &lt 7 BSPC &kp DEL
                         >;
                 };
  
@@ -82,12 +82,12 @@
 // |  (CDH)   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I     |  O    |  P      |  (BASE)  |
 // |  (NUM)   |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K     |  L    |  SQT    |  (NAV)   |
 // |  (CTAP)  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  COMMA |  DOT  |  FSLH   |  (BTAP)  |
-//  | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | RET (SYM) | BSPC (NUM) | DEL (FUN) |
+//                        | ESC | SPC | TAB |   | RET | BSPC | DEL |
                         bindings = <
    &to 2   &td_q_ae &kp W &kp E &kp R &kp T   &kp Y &td_u_h &td_i_mz  &kp O   &kp P    &to 0
    &tog 7  &kp A    &kp S &kp D &kp F &kp G   &kp H &kp J   &kp K     &kp L   &kp SQT  &tog 4
    &to 3   &kp Z    &kp X &kp C &kp V &kp B   &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &to 1
-                 &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
+                      &kp ESC &kp SPC &kp TAB   &kp RET &kp BSPC &kp DEL
                         >;
                 };
  
@@ -97,12 +97,12 @@
 // | (CDH)  | Q          | W        | F         | P         | B |   | J | L         | U         | Y        | SQT           | (BASE) |
 // | (NUM)  | A (LGUI)   | R (LALT) | S (LCTRL) | T (LSHFT) | G |   | M | N (RSHFT) | E (RCTRL) | I (RALT) | O (RGUI)      | (NAV)  |
 // | (CTAP) | Z (BUTTON) | X        | C         | D         | V |   | K | H         | COMMA     | DOT      | FSLH (BUTTON) | (BTAP) |
-//                      | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | RET (SYM) | BSPC (NUM) | DEL (FUN) |
+//                      | ESC (MEDIA) | SPC (NAV) | TAB (FUN) |   | RET (SYM) | BSPC (NUM) | DEL |
                         bindings = <
    &to 2  &kp Q       &kp W       &kp F        &kp P        &kp B   &kp J &kp L        &kp U        &kp Y       &kp SQT     &to 0
    &tog 7 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T &kp G   &kp M &hmr RSHFT N &hmr RCTRL E &hmr RALT I &hmr RGUI O &tog 4
    &to 3  &kp Z       &kp X       &kp C        &kp D        &kp V   &kp K &kp H        &kp COMMA    &kp DOT     &kp FSLH    &to 1
-                                      &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
+                                      &lt 6 ESC &lt 4 SPC &lt 9 TAB   &lt 8 RET &lt 7 BSPC &kp DEL
                         >;
                 };
  
@@ -112,12 +112,12 @@
 // |  (CDH)   |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U      |  Y    |  SQT  |  (BASE)  |
 // |  (NUM)   |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E      |  I    |  O    |  (NAV)   |
 // |  (CTAP)  |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  COMMA  |  DOT  |  FSLH |  (BTAP)  |
-//  | ESC (MEDIA) | SPC (NAV) | TAB (MOUSE) |   | ENT (SYM) | BSPC (NUM) | DEL (FUN) |
+//                        | ESC | SPC | TAB |   | ENT | BSPC | DEL |
                         bindings = <
    &to 2  &kp Q    &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT  &to 0
    &tog 7 &kp A    &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &tog 4
    &to 3  &kp Z    &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &to 1
-               &lt 6 ESC &lt 4 SPC &kp TAB   &lt 8 RET &lt 7 BSPC &lt 9 DEL
+                     &kp ESC &kp SPC &kp TAB   &kp RET &kp BSPC &kp DEL
                         >;
                 };
  
@@ -199,15 +199,15 @@
                 fun_layer { // Layer 9
                     display-name = "FUN";
 // -----------------------------------------------------------------------------------------
-// | (CDH)  | F12 | F7 | F8 | F9 | PSCRN       |   |    |       |       |      |      | (BASE) |
-// | (NUM)  | F11 | F4 | F5 | F6 | SLCK        |   |    | RSHFT | RCTRL | RALT | RGUI | (NAV)  |
-// | (CTAP) | F10 | F1 | F2 | F3 | PAUSE_BREAK |   |    |       |       |      |      | (BTAP) |
-//                       | K_APP | SPACE | TAB |   |    |    |    |
+// | (CDH)  | F13  | F14  | F15   | F16   |    |   |     | PSCRN       | F7 | F8 | F9 | (BASE) |
+// | (NUM)  | LGUI | LALT | LCTRL | LSHFT |    |   |     | SLCK        | F4 | F5 | F6 | (NAV)  |
+// | (CTAP) | F17  | F18  | F19   | F20   |    |   |     | PAUSE_BREAK | F1 | F2 | F3 | (BTAP) |
+//                              |    |    |    |   | RET | K_APP | DELL |
                         bindings = <
-   &to 2  &kp F12 &kp F7 &kp F8 &kp F9 &kp PSCRN         &none &none     &none     &none    &none    &to 0
-   &tog 7 &kp F11 &kp F4 &kp F5 &kp F6 &kp SLCK          &none &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &tog 4
-   &to 3  &kp F10 &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK   &none &none     &none     &none    &none    &to 1
-                           &kp K_APP &kp SPACE &kp TAB   &none &none &none
+   &to 2  &kp F13  &kp F14  &kp F15   &kp F16   &none   &kp PSCRN       &kp F7 &kp F8 &kp F9 &kp F12 &to 0
+   &tog 7 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none   &kp SLCK        &kp F4 &kp F5 &kp F6 &kp F11 &tog 4
+   &to 3  &kp F17  &kp F18  &kp F19   &kp F20   &none   &kp PAUSE_BREAK &kp F1 &kp F2 &kp F3 &kp F10 &to 1
+                                    &none &none &none   &kp RET &kp K_APP &kp DEL
                         >;
                 };
         };
