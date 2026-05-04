@@ -124,14 +124,14 @@
                 navigation_layer { // Layer 4
                     display-name = "NAV";
 // -----------------------------------------------------------------------------------------
-// | (CDH)  |      |      |       |       |    |   | K_REDO | K_PASTE | K_COPY | K_CUT | K_UNDO | (BASE) |
-// | (NUM)  | LGUI | LALT | LCTRL | LSHFT |    |   | LEFT   | DOWN    | UP     | RIGHT | CLCK   | (NAV)  |
-// | (CTAP) |      |      |       |       |    |   | HOME   | PG_DN   | PG_UP  | END   | INS    | (BTAP) |
+// | (CDH)  |      |      |       |       |    |   | K_REDO | LC(V) | LC(C) | LC(X) | K_UNDO | (BASE) |
+// | (NUM)  | LGUI | LALT | LCTRL | LSHFT |    |   | LEFT   | DOWN  | UP    | RIGHT | CLCK   | (NAV)  |
+// | (CTAP) |      |      |       |       |    |   | HOME   | PG_DN | PG_UP | END   | INS    | (BTAP) |
 //                              |    |    |    |   | ENT | BSPC | DEL |
                         bindings = <
-   &to 2  &none    &none    &none     &none     &none    &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO &to 0
-   &tog 7 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none    &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT &kp CLCK   &tog 4
-   &to 3  &none    &none    &none     &none     &none    &kp HOME   &kp PG_DN   &kp PG_UP  &kp END   &kp INS    &to 1
+   &to 2  &none    &none    &none     &none     &none    &kp K_REDO &kp LC(V) &kp LC(C) &kp LC(X) &kp K_UNDO &to 0
+   &tog 7 &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT &kp CLCK   &tog 4
+   &to 3  &none    &none    &none     &none     &none    &kp HOME   &kp PG_DN &kp PG_UP &kp END   &kp INS    &to 1
                                     &none &none &none    &kp RET &kp BSPC &kp DEL
                         >;
                 };
@@ -139,15 +139,15 @@
                 button_layer { // Layer 5
                     display-name = "BUTTON";
 // -----------------------------------------------------------------------------------------
-// | (CDH)  |    |       |        |         |      |   |      |         |        |       |    | (BASE) |
-// | (NUM)  |    |       | K_UNDO | K_REDO  |      |   |      | K_REDO  | K_UNDO |       |    | (NAV)  |
-// | (CTAP) |    | K_CUT | K_COPY | K_PASTE | BOOT |   | BOOT | K_PASTE | K_COPY | K_CUT |    | (BTAP) |
-//                                  |    |    |    |   |    |    |    |
+// | (CDH)  | BOOT |       |        |        |    |   |    |        |        |       | BOOT | (BASE) |
+// | (NUM)  |      |       | K_UNDO | K_REDO |    |   |    | K_REDO | K_UNDO |       |      | (NAV)  |
+// | (CTAP) |      | LC(X) | LC(C)  | LC(V)  |    |   |    | LC(V)  | LC(C)  | LC(X) |      | (BTAP) |
+//                                 |    |    |    |   |    |    |    |
                         bindings = <
-   &to 2  &none &none     &none      &none       &none         &none       &none       &none      &none     &none &to 0
-   &tog 7 &none &none     &kp K_UNDO &kp K_REDO  &none         &none       &kp K_REDO  &kp K_UNDO &none     &none &tog 4
-   &to 3  &none &kp K_CUT &kp K_COPY &kp K_PASTE &bootloader   &bootloader &kp K_PASTE &kp K_COPY &kp K_CUT &none &to 1
-                                     &none &none &none   &none &none &none
+   &to 2  &bootloader &none     &none      &none      &none   &none &none      &none      &none     &bootloader &to 0
+   &tog 7 &none       &none     &kp K_UNDO &kp K_REDO &none   &none &kp K_REDO &kp K_UNDO &none     &none       &tog 4
+   &to 3  &none       &kp LC(X) &kp LC(C)  &kp LC(V)  &none   &none &kp LC(V)  &kp LC(C)  &kp LC(X) &none       &to 1
+                                          &none &none &none   &none &none &none
                         >;
                 };
  
@@ -199,9 +199,9 @@
                 fun_layer { // Layer 9
                     display-name = "FUN";
 // -----------------------------------------------------------------------------------------
-// | (CDH)  | F13  | F14  | F15   | F16   |    |   |     | PSCRN       | F7 | F8 | F9 | (BASE) |
-// | (NUM)  | LGUI | LALT | LCTRL | LSHFT |    |   |     | SLCK        | F4 | F5 | F6 | (NAV)  |
-// | (CTAP) | F17  | F18  | F19   | F20   |    |   |     | PAUSE_BREAK | F1 | F2 | F3 | (BTAP) |
+// | (CDH)  | F13  | F14  | F15   | F16   |    |   | PSCRN       | F7 | F8 | F9 | F12 | (BASE) |
+// | (NUM)  | LGUI | LALT | LCTRL | LSHFT |    |   | SLCK        | F4 | F5 | F6 | F11 | (NAV)  |
+// | (CTAP) | F17  | F18  | F19   | F20   |    |   | PAUSE_BREAK | F1 | F2 | F3 | F10 | (BTAP) |
 //                              |    |    |    |   | RET | K_APP | DELL |
                         bindings = <
    &to 2  &kp F13  &kp F14  &kp F15   &kp F16   &none   &kp PSCRN       &kp F7 &kp F8 &kp F9 &kp F12 &to 0
